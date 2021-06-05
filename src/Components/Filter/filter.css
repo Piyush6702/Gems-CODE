@@ -1,9 +1,9 @@
 .FilterDiv{
   box-shadow: 0px 0px 8px rgba(46, 45, 45, 0.658);
-  margin:20px 15px  ;
+  margin:20px 0px;
   padding: 10px;
   border-radius: 8px;
-  max-width: 1200px;
+  width: 100%;
 
 }
 
@@ -15,20 +15,21 @@
 .Filters{
     display: flex;
     width: auto;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
     margin: 14px 0px;
 }
 
 .Filters .FilterItem{
     width: 30%;
-    min-width: 280px;
-    margin: 8px 10px;
+    min-width: 300px;
+    /* margin: 8px; */
 }
 
 .submitbtn{
     width: 30%;
     margin: auto;
+    min-width: 300px;
 }
 .submitbtn button{
     width: 100%;
@@ -63,8 +64,19 @@
 
 /* Media Quaries */
 
-@media only screen and (max-width:970px){
-    .Filters .FilterItem, .submitbtn{
+
+
+@media only screen and (max-width:1000px){
+    .Filters{
+        justify-content: center;
+    }
+    .FilterItem{
+        margin: 8px;
+    }
+
+
+    
+    .Filters .FilterItem,.submitbtn{
         width: 95%;
     }
 }

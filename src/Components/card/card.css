@@ -5,8 +5,8 @@ body{
 
 .card_main_cot{
     height: auto;
-    margin: 0 auto;
-    max-width: 1200px;
+    margin: 10px auto;
+    width: 100%;
     
     display: block;
     /* padding-left: 20px;
@@ -24,11 +24,10 @@ body{
 
 .card_wrapper{
     height: auto;
-    width: 99%;
-    max-width: 99%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -44,16 +43,14 @@ body{
     -webkit-filter: drop-shadow(0 6px 20px rgba(79, 240, 39, 0.017));
     filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
     overflow: hidden;
-    /* margin: 0 auto; */
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
+    margin:10px 10px 0px 10px ;
+ 
   }
   
   .card-header{
       /* margin-top: 40px; */
     background: #ffffff;
-    padding: 10px 40px;
+    padding: 10px 30px;
     /* margin-left: 20px; */
   }
   
@@ -118,3 +115,9 @@ body{
     background: #bbb;
   }
   
+  @media only screen and (max-width:800px){
+    .card_wrapper{
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+  }
+}

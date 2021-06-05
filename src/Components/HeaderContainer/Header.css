@@ -7,11 +7,11 @@ body {
 
 .banner {
   background-color: white;
-  padding: 10px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin-top: 20px;
+  width: 100%;
 }
 
 .banner .content {
@@ -20,7 +20,7 @@ body {
 }
 
 .content .leader{
-  margin: 10px;
+  margin: 10px 0px;
 }
 .b {
   margin-bottom: 10px;
@@ -36,12 +36,13 @@ body {
 }
 
 .banner .image {
-  max-width: 400px;
+  max-width: 350px;
   /* margin-left: 50px; */
 }
 
 .t {
-  margin: 10px;
+  margin: 10px 0px;
+  margin-left: 20px;
 }
 .t h1 {
   letter-spacing: 2px;
@@ -74,6 +75,10 @@ body {
 }
 
 @media only screen and (max-width: 500px) {
+  .leader, .t{
+   margin: 14px auto;
+   justify-content: center;
+  }
   .banner .content h1 {
     font-size: 1.8em;
   }
@@ -84,9 +89,8 @@ body {
     justify-content: center;
     flex-direction: column;
   }
-  .banner .image {
-    max-width: 90%;
-    height: auto;
-    margin-left: 0px;
+  .leader .image{
+    max-width: 250px;
+    margin: 14px auto;
   }
 }

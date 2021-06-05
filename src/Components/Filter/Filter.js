@@ -15,7 +15,7 @@ const Filter = (props) => {
               <option value="2020">First Year</option>
               <option value="2019">Second Year</option>
               <option value="2018">Third Year</option>
-              <option value="2017">Second Year</option>
+              <option value="2017">Final Year</option>
               <option value="passout">Passout</option>
             </select>
           </div>
